@@ -12,6 +12,8 @@
         android:layout_width="353dp"
         android:layout_height="51dp"
         android:editable="false"
+        android:isScrollContainer="true"
+        android:overScrollMode="ifContentScrolls"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.516"

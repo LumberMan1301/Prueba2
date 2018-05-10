@@ -74,6 +74,15 @@ public class ListaSimple {
         this.primero = null;
     }
 
+    public String meterLista(){
+        String lista = "[";
+        for(int i = 0; i < this.capacidad; i++){
+            lista+= String.valueOf(this.get(i))+", ";
+        }
+        lista +="]\n\n";
+        return lista;
+    }
+
 
     public NodoSimple getPrimero() {
         return primero;

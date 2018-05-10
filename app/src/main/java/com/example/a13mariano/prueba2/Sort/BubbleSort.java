@@ -26,6 +26,7 @@ public class BubbleSort {
                     list.swap(in, in + 1);
                     System.out.print(comparaciones);
                     list.imprimirL();
+                    BubbleSortAct.getTextPaso().append((CharSequence) list.meterLista());
 
                 }
             }
