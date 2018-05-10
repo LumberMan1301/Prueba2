@@ -15,11 +15,13 @@ import static com.example.a13mariano.prueba2.Sort.BubbleSort.setComparaciones;
 import static com.example.a13mariano.prueba2.Sort.BubbleSort.sort;
 
 /**
- * Clase de ordenamiento
+ * Clase principal o MainActivity que se ejecuta en el Dispositvo android
  */
 public class BubbleSortAct extends AppCompatActivity {
 
-
+    /**
+     * atributos de la clase, que hacen referencia a su vez a algun tipo de objeto en el Diseno del movil
+     */
     private Button botonLista;
     private Button botonSort;
 
@@ -30,7 +32,9 @@ public class BubbleSortAct extends AppCompatActivity {
 
     private TextView cantComparaciones;
     private TextView cantNumeros;
-
+    /**
+     * atributos necesarios para Guardar los elementos a ordenar
+     */
     private static ListaSimple l = new ListaSimple();
     private int cantidad;
     private String listaS = "[";

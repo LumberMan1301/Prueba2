@@ -3,6 +3,10 @@ package com.example.a13mariano.prueba2.Sort;
 import com.example.a13mariano.prueba2.BubbleSortAct;
 import com.example.a13mariano.prueba2.ListaSimple.ListaSimple;
 
+/**
+ * Clase de Ordenamiento
+ *
+ */
 public class BubbleSort {
 
 
