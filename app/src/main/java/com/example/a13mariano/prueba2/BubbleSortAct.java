@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.a13mariano.prueba2.ListaSimple.ListaSimple;
@@ -21,7 +22,7 @@ public class BubbleSortAct extends AppCompatActivity {
 
     private TextView textLista;
     private TextView textListaSort;
-    private static TextView textPaso;
+    private static EditText textPaso;
 
 
     private TextView cantComparaciones;
@@ -40,7 +41,7 @@ public class BubbleSortAct extends AppCompatActivity {
 
         textLista = (TextView)findViewById(R.id.txtLista);
         textListaSort = (TextView)findViewById(R.id.txtListaSort);
-        textPaso = (TextView)findViewById(R.id.txtPaso);
+        textPaso = (EditText) findViewById(R.id.txtPaso);
 
 
         cantComparaciones = (TextView)findViewById(R.id.cantComparaciones);
@@ -58,6 +59,7 @@ public class BubbleSortAct extends AppCompatActivity {
                 cantNumeros.setText("");
                 cantComparaciones.setText("");
                 setComparaciones(0);
+                textPaso.setText("");
 
 
 
@@ -110,7 +112,7 @@ public class BubbleSortAct extends AppCompatActivity {
 
     }
 
-    public static TextView getTextPaso() {
+    public static EditText getTextPaso() {
         return textPaso;
     }
 }
