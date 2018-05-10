@@ -17,6 +17,12 @@ public class BubbleSort {
         ListaSimple list = lista;
         BubbleSortAuxiliar(list, lista.getCapacidad() - 1);
     }
+
+    /**
+     * Código para mostrar paso a paso el ordenamiento
+     * @param list lista de la que se quiere conseguir los pasos a efectuar
+     * @param amount 
+     */
     private static void BubbleSortAuxiliar(ListaSimple list, int amount){
 
         for (int out = amount; out > 0; out--) {
@@ -32,10 +38,19 @@ public class BubbleSort {
             }
         }
     }
+
+    /**
+     * Retorna el número de comparaciones realizadas
+     * @return número de comparaciones
+     */
     public static int getComparaciones() {
         return comparaciones;
     }
 
+    /**
+     * Coloca el número de comparaciones en el constructor
+     * @param comparaciones número de comparaciones al ejecutar el código
+     */
     public static void setComparaciones(int comparaciones) {
         BubbleSort.comparaciones = comparaciones;
     }
