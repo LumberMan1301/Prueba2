@@ -1,15 +1,22 @@
 package com.example.a13mariano.prueba2.ListaSimple;
 
-//falta el java DOC
+//Clase lista para manejar los datos
 public class ListaSimple {
     private NodoSimple primero;
     private int capacidad;
 
+    /**
+     * Constructor
+     */
     public ListaSimple(){
         this.primero=null;
         this.capacidad = 0;
     }
 
+    /**
+     *
+     * @param dato valor que se quiere agreagar
+     */
     public void insertar(int dato){
         NodoSimple aux = new NodoSimple(dato);
         if (this.capacidad == 0){
@@ -25,6 +32,9 @@ public class ListaSimple {
         }
     }
 
+    /**
+     * Imprime los elementos de la lista
+     */
     public void imprimirL(){
         if(this.capacidad == 0)
             System.out.println("Lista Vacia");
@@ -40,7 +50,11 @@ public class ListaSimple {
     }
 
 
-
+    /**
+     *
+     * @param i indíce dek ekemento de la lista que se desea
+     * @return retorna el dato contenido en el nodo
+     */
     public int get(int i) {
         NodoSimple aux = this.primero;
         int x = 0;
@@ -62,6 +76,12 @@ public class ListaSimple {
         }
         return aux;
     }
+
+    /**
+     *
+     * @param i1 índice de elemento en específico
+     * @param i2 índice de elemento en específico
+     */
     public void swap(int i1, int i2){
         int i = get(i1);
         int j = get(i2);
@@ -69,11 +89,18 @@ public class ListaSimple {
         getNodo(i2).setData(i);
     }
 
+    /**
+     * Vacía la lista
+     */
     public void vaciar(){
         this.capacidad = 0;
         this.primero = null;
     }
 
+    /**
+     *
+     * @return convierte los elementos de la lista en strings
+     */
     public String meterLista(){
         String lista = "[";
         for(int i = 0; i < this.capacidad; i++){
@@ -83,11 +110,18 @@ public class ListaSimple {
         return lista;
     }
 
-
+    /**
+     *
+     * @return primer elemento de la lista
+     */
     public NodoSimple getPrimero() {
         return primero;
     }
 
+    /**
+     *
+     * @return tamaño de la lista
+     */
     public int getCapacidad() {
         return capacidad;
     }

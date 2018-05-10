@@ -14,6 +14,9 @@ import static com.example.a13mariano.prueba2.Sort.BubbleSort.getComparaciones;
 import static com.example.a13mariano.prueba2.Sort.BubbleSort.setComparaciones;
 import static com.example.a13mariano.prueba2.Sort.BubbleSort.sort;
 
+/**
+ * Clase de ordenamiento
+ */
 public class BubbleSortAct extends AppCompatActivity {
 
 
@@ -82,6 +85,11 @@ public class BubbleSortAct extends AppCompatActivity {
 
 
     }
+
+    /**
+     * Genera una lista con valores random
+     * @return lista de valores random
+     */
     private String llenarLista(){
 
         String lista = "[";
@@ -100,6 +108,11 @@ public class BubbleSortAct extends AppCompatActivity {
         lista += " ]";
         return lista;
     }
+
+    /**
+     * Ordena la lista de mayor a menor
+     * @return lista ordenada
+     */
     private String listaSort(){
 
         sort(l);
