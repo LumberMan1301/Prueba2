@@ -13,7 +13,7 @@ import static com.example.a13mariano.prueba2.Sort.BubbleSort.getComparaciones;
 import static com.example.a13mariano.prueba2.Sort.BubbleSort.setComparaciones;
 import static com.example.a13mariano.prueba2.Sort.BubbleSort.sort;
 
-public class BubbleSort extends AppCompatActivity {
+public class BubbleSortAct extends AppCompatActivity {
 
 
     private Button botonLista;
@@ -21,6 +21,7 @@ public class BubbleSort extends AppCompatActivity {
 
     private TextView textLista;
     private TextView textListaSort;
+    private static TextView textPaso;
 
 
     private TextView cantComparaciones;
@@ -35,10 +36,11 @@ public class BubbleSort extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prueba2);
 
-        this.setTitle("BubbleSort");
+        this.setTitle("BubbleSortAct");
 
         textLista = (TextView)findViewById(R.id.txtLista);
         textListaSort = (TextView)findViewById(R.id.txtListaSort);
+        textPaso = (TextView)findViewById(R.id.txtPaso);
 
 
         cantComparaciones = (TextView)findViewById(R.id.cantComparaciones);
@@ -108,6 +110,8 @@ public class BubbleSort extends AppCompatActivity {
 
     }
 
-
+    public static TextView getTextPaso() {
+        return textPaso;
+    }
 }
 

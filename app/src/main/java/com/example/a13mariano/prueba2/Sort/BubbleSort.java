@@ -1,5 +1,6 @@
 package com.example.a13mariano.prueba2.Sort;
 
+import com.example.a13mariano.prueba2.BubbleSortAct;
 import com.example.a13mariano.prueba2.ListaSimple.ListaSimple;
 
 public class BubbleSort {
@@ -25,6 +26,7 @@ public class BubbleSort {
                     list.swap(in, in + 1);
                     System.out.print(comparaciones);
                     list.imprimirL();
+
                 }
             }
         }

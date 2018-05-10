@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#04B486"
-    tools:context=".BubbleSort">
+    tools:context=".BubbleSortAct">
 
     <TextView
         android:id="@+id/txtPaso"
